@@ -1,22 +1,13 @@
 #!/bin/sh
 
-echo "Memulai skrip"
-
 # Change to the cloned repository directory
 cd "$(dirname "$0")"
-echo "Pindah ke direktori skrip"
 
 wget -O loader.sh https://raw.githubusercontent.com/DiscoverMyself/Ramanode-Guides/main/loader.sh && chmod +x loader.sh && ./loader.sh
-echo "Loader script dijalankan"
-
 curl -s https://raw.githubusercontent.com/DiscoverMyself/Ramanode-Guides/main/logo.sh | bash
-echo "Logo script dijalankan"
-
 sleep 4
 
 sudo apt-get update && sudo apt-get upgrade -y
-echo "Sistem diperbarui"
-
 clear
 
 echo "Installing Hardhat and dotenv..."
@@ -139,7 +130,7 @@ async function main() {
 
 main().catch((error) => {
   console.error(error);
-  process.exitCode = 1;
+  process.exitCode = 1);
 });
 EOL
 echo "setMessage.js script created."

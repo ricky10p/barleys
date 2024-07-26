@@ -130,7 +130,7 @@ async function main() {
 
 main().catch((error) => {
   console.error(error);
-  process.exitCode = 1);
+  process.exitCode = 1;
 });
 EOL
 echo "setMessage.js script created."
